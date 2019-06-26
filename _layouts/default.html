@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/idea.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        html {
+            font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+
+        body {
+            width: 60rem;
+            font-size: 1rem;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        h1, h2, h3 {
+            margin: 1rem 0 1rem 0;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        header {
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        #home {
+            height: 50px;
+            line-height: 50px;
+        }
+
+        #home a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: #333;
+        }
+
+        #info {
+            height: 35px;
+            line-height: 35px;
+        }
+
+        ul {
+            list-style-position: inside;
+        }
+
+        .debug {
+            border1: dashed red 1px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header>
+    <div id="home">
+        <a href="/">Pi-TV</a>
+    </div>
+    <div id="info">
+        TODO
+    </div>
+</header>
+
+<section id="content">
+    {{ content }}
+</section>
+
+<footer>
+    &copy; 2019 <a href="mailto:xantorohara@gmail.com"> Xantorohara </a>
+</footer>
+
+</body>
+</html>
