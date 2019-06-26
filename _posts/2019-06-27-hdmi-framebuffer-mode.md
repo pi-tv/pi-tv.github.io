@@ -12,7 +12,8 @@ Loader gets this resolution from the TV itself.
 
 But this resolution isn't comfortable to work in the console.
 Characters are extremely small.
-And it would be nice to have them twice bigger, because eyes get very tired.
+And it would be nice to have them, for example, twice bigger, because eyes just get very tired.
+ 
  
 It can be changed. Just add this line:
 
