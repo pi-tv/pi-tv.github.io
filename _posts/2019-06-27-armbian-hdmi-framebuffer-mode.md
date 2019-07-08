@@ -15,10 +15,10 @@ Characters are extremely small.
 And it would be nice to have them, for example, twice bigger, because eyes just get very tired.
  
  
-It can be changed. Just add this line:
+It can be changed. Just put this line:
 
 ```bash
 extraargs=drm_kms_helper.edid_firmware=HDMI-A-1:edid/1280x720.bin video=HDMI-A-1:1280x720@60
 ```
 
-into the `/boot/armbianEnv.txt` and reboot.
+into the `/boot/armbianEnv.txt`, save and reboot.

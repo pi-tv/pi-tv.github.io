@@ -13,6 +13,7 @@
             margin: 0;
             padding: 0;
             outline: none;
+            border: none;
         }
 
         body {
@@ -57,7 +58,17 @@
 
         header {
             height: 80px;
-            margin-bottom: 20px;
+            background-image: url("/img/pi-icon-80.png");
+            background-position: right top;
+            background-repeat: no-repeat;
+        }
+
+        article {
+
+        }
+
+        .debug header {
+            border: dashed red 1px;
         }
 
         footer {
@@ -65,28 +76,29 @@
             text-align: center;
         }
 
-        #home {
-            height: 50px;
-            line-height: 50px;
-        }
-
-        #home a {
+        header a {
+            display: inline-block;
+            cursor: pointer;
             font-size: 2rem;
+            line-height: 3rem;
             text-decoration: none;
-            color: #333;
         }
 
-        #info {
-            height: 35px;
-            line-height: 35px;
-        }
-
-        /*ul {*/
-        /*    list-style-position: inside;*/
-        /*}*/
-
-        .debug {
-            border1: dashed red 1px;
+        header hr {
+            height: 5px;
+            background: linear-gradient(90deg,
+            dodgerblue 0px,
+            dodgerblue 100px,
+            red 100px,
+            red 125px,
+            yellow 125px,
+            yellow 150px,
+            lime 150px,
+            lime 175px,
+            dodgerblue 175px,
+            dodgerblue 80%,
+            transparent 90%
+            );
         }
 
     </style>
@@ -95,17 +107,13 @@
 <body>
 
 <header>
-    <div id="home">
-        <a href="/">Pi-TV</a>
-    </div>
-    <div id="info">
-        TODO
-    </div>
+    <a href="/">Pi-TV</a>
+    <hr/>
 </header>
 
-<section id="content">
+<article id="content">
     {{ content }}
-</section>
+</article>
 
 <footer>
     &copy; 2019 <a href="mailto:xantorohara@gmail.com"> Xantorohara </a>
