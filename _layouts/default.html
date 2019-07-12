@@ -120,9 +120,7 @@
     <a href="/">Pi-TV</a>
     <hr/>
     <div id="tags">
-    [{% for tag in page.tags %}
-        {{ tag[0] }}{% unless forloop.last %}, {% endunless %}
-    {% endfor %}]
+    [ {% for tag in page.tags %}{{ tag[0] }}{% unless forloop.last %}, {% endunless %}{% endfor %} ]
     </div>    
 
     </header>
