@@ -104,7 +104,12 @@
         ul {
             list-style-position: inside;
         }
-
+        
+        #tags {
+            margin: 0.5em 0;
+            line-height: 1.5;
+            text-align: center
+        }
     </style>
 
 </head>
@@ -113,7 +118,13 @@
 <header>
     <a href="/">Pi-TV</a>
     <hr/>
-</header>
+    <div id="tags">Tags:
+    {% for tag in site.tags %}
+        {{ tag[0] }}
+    {% endfor %}
+    </div>    
+
+    </header>
 
 <article id="content">
     {{ content }}
