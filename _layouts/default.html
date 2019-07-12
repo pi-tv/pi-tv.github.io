@@ -108,7 +108,8 @@
         #tags {
             margin: 0.5em 0;
             line-height: 1.5;
-            text-align: center
+            text-align: center;
+            font-family: Consolas, "Lucida Console", monospace;
         }
     </style>
 
@@ -118,10 +119,14 @@
 <header>
     <a href="/">Pi-TV</a>
     <hr/>
-    <div id="tags">Tags:
+    <div id="tags">[
     {% for tag in site.tags %}
         {{ tag[0] }}
+        {% unless forloop.last %}
+            ,
+        {% endunless %}
     {% endfor %}
+        ]
     </div>    
 
     </header>
