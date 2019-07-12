@@ -1,6 +1,6 @@
 ---
 layout: default
-tags: Armbian, Orange Pi, HDMI, Framebuffer
+tags: [Armbian, Orange Pi, HDMI, Framebuffer]
 permalink: /:title
 
 ---
