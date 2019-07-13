@@ -1,6 +1,7 @@
 ---
 layout: index
 title: Pi-TV
+tags: [Pi, TV]
 ---
 
 Pi boards (Raspberry, Orange, Banana and others) are small and powerful enough

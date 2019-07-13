@@ -1,6 +1,6 @@
 ---
 layout: default
-tags: Armbian
+tags: [Armbian]
 permalink: /:title
 
 ---
