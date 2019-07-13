@@ -2,9 +2,19 @@
 layout: default
 ---
 
-{{ content }}
+<header>
+    <a href="/">Pi-TV</a>
+    <hr/>
+    <div id="tags">
+        <span style="float:right">{{ site.date | date: "%Y-%m-%d"  }}</span>
+    </div>
+</header>
 
-<h2>Related articles</h2>
+<article id="content">
+    {{ content }}
+</article>
+
+<h2>Articles</h2>
 
 {% for post in site.posts %}
 <ul>

@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: post
 tags: [Armbian]
 permalink: /:title
-
 ---
+
 # Armbian cleanup
 
 ## Remove "Unattended Upgrades" package

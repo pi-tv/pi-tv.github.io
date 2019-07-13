@@ -4,6 +4,8 @@ title: Pi-TV
 tags: [Pi, TV]
 ---
 
+# Intro
+
 Pi boards (Raspberry, Orange, Banana and others) are small and powerful enough
 to create something useful and interesting. For example, a home-made media center.
 
