@@ -13,14 +13,17 @@ Sometimes "unattended-upgrade" process eat almost 100% CPU on my Orange Pi.
 
 Do you really need it? I'm not.
 
-This command helps a lot:
-
+This command removes auto-updates service:
 ```bash
 apt remove unattended-upgrades
 ```
 
-## Remove unwanted locales
+## Cleanup file system
+### Remove unwanted locales
 
+I don't need anything other than English locale.
+
+This script cleans up locales directory:
 ```bash
 #!/bin/bash
 
@@ -33,15 +36,16 @@ find $TARGET/en_* ! -path "$TARGET/en_US*" -delete
 echo Disk usage after: `du -sh $TARGET`
 ```
 
-Result:
+As result, it saves about 28 MegaBytes of disk space:
 ```text
 Cleanup target: /usr/share/locale
 Disk usage before: 28M /usr/share/locale
 Disk usage after: 160K /usr/share/locale
 ```
 
-## Remove unwanted mans
+### Remove unwanted mans
 
+I don't need mans in national languages:
 ```bash
 #!/bin/bash
 
@@ -56,7 +60,7 @@ echo Update man db
 mandb
 ```
 
-Result:
+Is saves 6 MegaBytes:
 ```text
 Cleanup target: /usr/share/man
 Disk usage before: 18M /usr/share/man
@@ -64,8 +68,9 @@ Disk usage after: 12M /usr/share/man
 Update man db
 ```
 
-## Remove docs
+### Remove docs
 
+And I don't need any documentation in a language other than English:
 ```bash
 #!/bin/bash
 
@@ -77,9 +82,13 @@ rm -rf /usr/share/info
 echo Disk usage after: `du -sh /usr/share`
 ```
 
-Result:
+It frees about 25 MegaBytes:
 ```text
 Cleanup docs
 Disk usage before: 200M /usr/share
 Disk usage after: 174M /usr/share
 ```
+
+It make sense to cleanup file system if you have limited amount of disk space.
+For example, if you use Micro-SDs size of 1GB or 2GB. Or if a board has small EMMC storage.
+
