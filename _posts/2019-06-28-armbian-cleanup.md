@@ -6,8 +6,10 @@ permalink: /:title
 
 # Armbian cleanup
 
-## Remove "Unattended Upgrades" package
-Unattended Upgrades keeps Armbian up to date with the latest updates automatically.
+## Disable auto-updates
+### Remove "Unattended Upgrades" package
+
+"Unattended Upgrades" keeps the Armbian up to date with the latest updates automatically.
 
 Sometimes "unattended-upgrade" process eat almost 100% CPU on my Orange Pi.
 
@@ -17,13 +19,18 @@ This command removes auto-updates service:
 ```bash
 apt remove unattended-upgrades
 ```
+<br/>
 
 ## Cleanup file system
+
+It make sense to cleanup file system if you have limited amount of disk space.
+For example, if you use Micro-SDs size of 1GB or 2GB. Or if a board has small EMMC storage.
+
 ### Remove unwanted locales
 
 I don't need anything other than English locale.
 
-This script cleans up locales directory:
+This script cleans up "locales" directory:
 ```bash
 #!/bin/bash
 
@@ -88,7 +95,3 @@ Cleanup docs
 Disk usage before: 200M /usr/share
 Disk usage after: 174M /usr/share
 ```
-
-It make sense to cleanup file system if you have limited amount of disk space.
-For example, if you use Micro-SDs size of 1GB or 2GB. Or if a board has small EMMC storage.
-
