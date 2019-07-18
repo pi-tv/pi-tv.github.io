@@ -19,7 +19,6 @@ This command removes auto-updates service:
 ```bash
 apt remove unattended-upgrades
 ```
-<br/>
 
 ## Cleanup file system
 
