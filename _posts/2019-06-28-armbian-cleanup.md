@@ -43,7 +43,7 @@ echo Disk usage after: `du -sh $TARGET`
 ```
 
 As result, it saves about 28 MegaBytes of disk space:
-```shell-session
+```shell
 $ ./cleanup-locales.sh
 Cleanup target: /usr/share/locale
 Disk usage before: 28M /usr/share/locale
@@ -68,7 +68,7 @@ mandb
 ```
 
 Is saves 6 MegaBytes:
-```shell-session
+```shell
 $ ./cleanup-mans.sh
 Cleanup target: /usr/share/man
 Disk usage before: 18M /usr/share/man
@@ -91,7 +91,7 @@ echo Disk usage after: `du -sh /usr/share`
 ```
 
 It frees about 25 MegaBytes:
-```shell-session
+```shell
 $ ./cleanup-docs.sh
 Cleanup docs
 Disk usage before: 200M /usr/share
