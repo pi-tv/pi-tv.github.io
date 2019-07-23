@@ -1,5 +1,7 @@
 url: "https://pi-tv.github.io"
-  
+
+highlighter: none
+
 plugins:
   - jekyll-sitemap
   
