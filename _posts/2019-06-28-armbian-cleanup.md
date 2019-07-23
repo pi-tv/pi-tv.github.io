@@ -16,8 +16,8 @@ Sometimes "unattended-upgrade" process eat almost 100% CPU on my Orange Pi.
 Do you really need it? I'm not.
 
 This command removes auto-updates service:
-```bash
-apt remove unattended-upgrades
+```shell
+$ apt remove unattended-upgrades
 ```
 
 ## Cleanup file system

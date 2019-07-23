@@ -25,7 +25,6 @@ $ nc -l 192.168.11.10 12345 >/dev/null
 Transfer 100 megabytes from Orange Pi to PC:
 ```shell
 $ dd if=/dev/zero bs=1M count=100 | nc 192.168.11.10 12345
-
 100+0 records in
 100+0 records out
 104857600 bytes (105 MB, 100 MiB) copied, 8.89301 s, 11.8 MB/s
@@ -41,7 +40,6 @@ $ nc -l 192.168.11.1 12345 >/dev/null
 Transfer 100 megabytes from PC to Orange Pi:
 ```shell
 $ dd if=/dev/zero bs=1M count=100 | nc 192.168.11.1 12345
-
 100+0 records in
 100+0 records out
 104857600 bytes (105 MB, 100 MiB) copied, 9.07551 s, 11.6 MB/s
@@ -66,7 +64,6 @@ Transfer 100 megabytes from Orange Pi to PC:
 
 ```shell
 $ dd if=/dev/zero bs=1M count=100 | nc 192.168.11.10 12345
-
 100+0 records in
 100+0 records out
 104857600 bytes (105 MB, 100 MiB) copied, 42.5146 s, 2.5 MB/s
@@ -78,7 +75,6 @@ Transfer 100 megabytes from PC to Orange Pi:
 
 ```shell
 $ dd if=/dev/zero bs=1M count=100 | nc 192.168.11.1 12345
-
 100+0 records in
 100+0 records out
 104857600 bytes (105 MB, 100 MiB) copied, 54.1733 s, 1.9 MB/s
