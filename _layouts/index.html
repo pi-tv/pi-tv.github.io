@@ -16,34 +16,14 @@ layout: default
 
 <h2>Articles</h2>
 
-{% for post in site.posts %}
 <ul>
+    {% for post in site.posts %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
 </ul>
-{% endfor %}
+
 
 <h2>Tags</h2>
-<style>
-    .index-tags {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .index-tag {
-        flex: 1 0 auto;
-    }
-</style>
-
-<div class="index-tags">
-    {% for tag in site.tags %}
-    <div class="index-tag">
-        <h3>{{ tag[0] }}</h3>
-        <ul>
-            {% for post in tag[1] %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
-    {% endfor %}
-</div>
+<ul>
+    <li><a href="/tags">All</a></li>
+</ul>

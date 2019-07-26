@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<style>
+    .index-tags {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .index-tag {
+        flex: 1 0 auto;
+    }
+</style>
+
+<header>
+    <a href="/">Pi-TV</a>
+    <hr/>
+    <div id="tags">
+        <span style="float:right">{{ site.time | date: "%Y-%m-%d"  }}</span>
+    </div>
+</header>
+
+
+<h1>Tags</h1>
+<div class="index-tags">
+    {% for tag in site.tags %}
+    <div class="index-tag">
+        <h3>{{ tag[0] }}</h3>
+        <ul>
+            {% for post in tag[1] %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>

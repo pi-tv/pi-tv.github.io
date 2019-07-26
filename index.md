@@ -1,7 +1,6 @@
 ---
 layout: index
 title: Pi-TV
-tags: [Pi, TV]
 ---
 
 # Intro
