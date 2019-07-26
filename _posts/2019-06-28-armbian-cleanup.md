@@ -1,5 +1,6 @@
 ---
 layout: post
+title:  Armbian cleanup
 tags: [Armbian]
 permalink: /:title
 ---

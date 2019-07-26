@@ -1,6 +1,7 @@
 ---
 layout: post
-tags: [Armbian, Orange Pi, Temperature, Hardware]
+title: Orange Pi temperature
+tags: [Orange Pi, Hardware]
 permalink: /:title
 ---
 

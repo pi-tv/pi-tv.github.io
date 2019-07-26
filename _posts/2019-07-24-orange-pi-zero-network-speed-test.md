@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Orange Pi Zero network speed test
 tags: [Orange Pi, Network, Wi-Fi, Ethernet]
 permalink: /:title
 ---

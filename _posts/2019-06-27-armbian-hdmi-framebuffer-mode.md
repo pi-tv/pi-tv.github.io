@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Armbian HDMI framebuffer mode
 tags: [Armbian, Orange Pi, HDMI, Framebuffer]
 permalink: /:title
 ---
