@@ -7,7 +7,7 @@ permalink: /:title
 
 # Armbian HDMI framebuffer mode
 
-My Orange Pi PC 2 (Armbian 5.83) always outputs video to a HDMI TV using the **1920x1080@60** mode. 
+My Orange Pi PC 2 (Armbian 5.83 with a mainline kernel) always outputs video to a HDMI TV using the **1920x1080@60** mode. 
 Loader gets this resolution from the TV itself.
 
 But this resolution isn't comfortable to work in the console.

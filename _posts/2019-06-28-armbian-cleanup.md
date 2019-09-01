@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Armbian cleanup
-tags: [Armbian]
+tags: [Armbian, Linux]
 permalink: /:title
 ---
 
