@@ -2,7 +2,8 @@ url: "https://pi-tv.github.io"
 permalink: /:title
 layout: post
 collections:
-  - docs
+  docs:
+    output: true
 
 markdown: kramdown
 kramdown:
