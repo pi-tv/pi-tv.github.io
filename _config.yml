@@ -5,7 +5,8 @@ layout: post
 collections:
   docs:
     output: true
-    permalink: /:basename
+    directory: /
+    permalink: /:title
 
 markdown: kramdown
 kramdown:
