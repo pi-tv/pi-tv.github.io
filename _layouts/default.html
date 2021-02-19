@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<!--20190726-->
+<!--20210219-->
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.desc }}">
+    <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+    <meta name="author" content="Xantorohara">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -165,7 +168,7 @@
 {{ content }}
 
 <footer>
-    &copy; 2019 <a href="mailto:xantorohara@gmail.com"> Xantorohara </a>
+    &copy; 2019-2021 <a href="mailto:xantorohara@gmail.com"> Xantorohara </a>
 </footer>
 
 </body>
