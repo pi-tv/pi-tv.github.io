@@ -9,8 +9,6 @@ date: 2020-12-25
 
 ## Samba server setup
 ```bash
-#!/bin/bash
-
 pacman -Sy samba
 man smb.conf
 systemctl start smb
@@ -20,8 +18,6 @@ systemctl restart smb
 
 ## Create samba user
 ```bash
-#!/bin/bash
-
 useradd --create-home user
 smbpasswd -a user
 ```
@@ -53,13 +49,13 @@ writeable = no
 
 
 ## Windows client
-```dos
+```cmd
 net use U: "\\myarch\private" /user:user
 net use U: /delete
 net use "\\myarch\private" /delete
 ```
 
-```dos
+```cmd
 net use V: "\\myarch\public"
 net use V: /delete
 ```
@@ -67,14 +63,10 @@ net use V: /delete
 ## Linux client
 Mount share:
 ```bash
-#!/bin/bash
-
 man mount.cifs
 mount -t cifs //myarch/private /mnt/myarch_private -o user=user,pass=****
 ```
 No-mount access:
 ```bash
-#!/bin/bash
-
 smbget --user user smb://myarch/myarch/test.txt
 ```

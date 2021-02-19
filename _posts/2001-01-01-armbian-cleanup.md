@@ -1,6 +1,6 @@
 ---
 title:  Armbian cleanup
-tags: [Armbian, Linux]
+tags: [Armbian, Linux, cleanup]
 desc: Remove unnecessary linux files in Armbian
 date: 2019-07-25
 ---
@@ -14,8 +14,6 @@ Sometimes "unattended-upgrade" process eat almost 100% CPU on my Orange Pi.
 I definitely don't need this. Removing it:
 
 ```bash
-#!/bin/bash
-
 apt remove unattended-upgrades
 ```
 
