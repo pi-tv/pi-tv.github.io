@@ -1,12 +1,12 @@
 ---
 title: Arch linux pacman local mirror
-tags: [Arch Linux, Mirror, pacman]
+tags: [Arch, Linux, mirror, pacman]
 desc: Make a local Arch mirror
 ---
 
 # Arch linux pacman local mirror
 ## Make a mirror
-```shell script
+```bash
 #!/bin/bash
 
 SOURCE=rsync://mirror.yandex.ru/archlinux

@@ -1,6 +1,6 @@
 ---
 title: Arch linux cleanup
-tags: [Arch, Linux, Cleanup]
+tags: [Arch, Linux, cleanup]
 desc: Remove unnecessary linux files
 ---
 

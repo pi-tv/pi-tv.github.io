@@ -5,7 +5,7 @@ layout: post
 collections:
   docs:
     output: true
-    directory: /
+    relative_directory: /
     permalink: /:title
 
 markdown: kramdown
