@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Arch linux cleanup
 tags: [Arch, Linux, Cleanup]
 desc: Remove unnecessary linux files
@@ -7,8 +6,9 @@ desc: Remove unnecessary linux files
 
 # Arch linux cleanup
 
-## Analyze disk usage
+Sometimes disk space matters.
 
+## Analyze disk usage
 ```bash
 #!/bin/bash
 
@@ -21,7 +21,6 @@ echo Disk usage $(du -sh /usr/share)
 ```
 
 ## Cleanup boot
-
 ```bash
 #!/bin/bash
 
@@ -29,7 +28,6 @@ rm /boot/initramfs-linux-fallback.img
 ```
 
 ## Cleanup mans
-
 ```bash
 #!/bin/bash
 
@@ -37,7 +35,6 @@ rm /boot/initramfs-linux-fallback.img
 ```
 
 ### Get rid of mandb
-
 ```bash
 #!/bin/bash
 
@@ -46,7 +43,6 @@ rm -rf /var/cache/man
 ```
 
 ## Cleanup locales
-
 ```bash
 #!/bin/bash
 
@@ -55,7 +51,6 @@ rm -rf /var/cache/man
 ```
 
 ## Cleanup docs
-
 ```bash
 #!/bin/bash
 
@@ -65,7 +60,6 @@ rm -rf /usr/share/gtk-doc
 ```
 
 ## Clear pacman cache
-
 ```bash
 #!/bin/bash
 
