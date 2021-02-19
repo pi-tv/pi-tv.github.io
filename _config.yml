@@ -3,6 +3,7 @@ url: "https://pi-tv.github.io"
 collections:
   docs:
     output: true
+    layout: doc
     directory: /
     permalink: /:title
 
