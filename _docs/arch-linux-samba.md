@@ -5,6 +5,7 @@ desc: Network share setup
 ---
 
 # Arch linux samba
+
 ## Samba server setup
 ```bash
 #!/bin/bash
@@ -25,7 +26,7 @@ smbpasswd -a user
 ```
 
 ## Samba config "/etc/samba/smb.conf"
-```
+```ini
 [global]
 server role = STANDALONE
 log level = 1 auth_audit:3 

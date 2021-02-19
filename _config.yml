@@ -1,11 +1,9 @@
 url: "https://pi-tv.github.io"
 
-layout: post
-
 collections:
   docs:
     output: true
-    relative_directory: /
+    directory: /
     permalink: /:title
 
 markdown: kramdown
