@@ -1,14 +1,10 @@
 url: "https://pi-tv.github.io"
 
-collections:
-  docs:
-    output: true
-
 defaults:
   - scope:
-      type: docs
+      type: posts
     values:
-      layout: doc
+      layout: post
       permalink: /:title
 
 markdown: kramdown
