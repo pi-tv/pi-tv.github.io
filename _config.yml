@@ -1,4 +1,6 @@
 url: "https://pi-tv.github.io"
+permalink: /:title
+layout: post
 
 markdown: kramdown
 kramdown:

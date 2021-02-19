@@ -9,7 +9,9 @@ desc: Remove unnecessary linux files
 
 ## Analyze disk usage
 
-```shell
+```bash
+#!/bin/bash
+
 df -h /
 du -shx / #-x, --one-file-system
 du -cshx /boot /usr /var #-c, --total
@@ -18,35 +20,45 @@ du -cshx /usr/share/* |sort -h
 echo Disk usage $(du -sh /usr/share)
 ```
 
-## Cleanup /boot
+## Cleanup boot
 
-```shell
+```bash
+#!/bin/bash
+
 rm /boot/initramfs-linux-fallback.img
 ```
 
 ## Cleanup mans
 
-```shell
+```bash
+#!/bin/bash
+
 (cd /usr/share/man && find ! -path "./man*" -delete)
 ```
 
 ### Get rid of mandb
 
-```shell
+```bash
+#!/bin/bash
+
 systemctl disable man-db
 rm -rf /var/cache/man
 ```
 
 ## Cleanup locales
 
-```shell
+```bash
+#!/bin/bash
+
 (cd /usr/share/locale && find ! -path "./en_US*" ! -path "./en@*" -delete)
 (cd /usr/share/i18n/locales && find ! -name "POSIX" ! -name "en_US" -delete)
 ```
 
 ## Cleanup docs
 
-```shell
+```bash
+#!/bin/bash
+
 rm -rf /usr/share/doc
 rm -rf /usr/share/info
 rm -rf /usr/share/gtk-doc
@@ -54,6 +66,8 @@ rm -rf /usr/share/gtk-doc
 
 ## Clear pacman cache
 
-```shell
+```bash
+#!/bin/bash
+
 pacman -Scc
 ```

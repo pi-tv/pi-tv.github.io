@@ -2,7 +2,6 @@
 layout: post
 title: Linux framebuffer screenshot
 tags: [Linux, Framebuffer]
-permalink: /:title
 ---
 
 # Linux framebuffer screenshot
