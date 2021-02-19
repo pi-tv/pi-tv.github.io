@@ -2,6 +2,7 @@
 title: Arch linux pacman
 tags: [Arch, Linux, pacman]
 desc: Pacman memos
+date: 2020-12-25
 ---
 
 # Arch linux pacman

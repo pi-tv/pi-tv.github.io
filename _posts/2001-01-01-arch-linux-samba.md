@@ -2,6 +2,7 @@
 title: Arch linux samba
 tags: [Arch, Linux, samba, SMB, Windows]
 desc: Network share setup
+date: 2020-12-25
 ---
 
 # Arch linux samba
@@ -52,13 +53,13 @@ writeable = no
 
 
 ## Windows client
-```cmd
+```dos
 net use U: "\\myarch\private" /user:user
 net use U: /delete
 net use "\\myarch\private" /delete
 ```
 
-```cmd
+```dos
 net use V: "\\myarch\public"
 net use V: /delete
 ```
