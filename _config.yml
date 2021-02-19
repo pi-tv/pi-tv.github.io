@@ -3,14 +3,13 @@ url: "https://pi-tv.github.io"
 collections:
   docs:
     output: true
-    directory: /
 
 defaults:
   - scope:
       type: docs
     values:
       layout: doc
-
+      permalink: /:title
 
 markdown: kramdown
 kramdown:
