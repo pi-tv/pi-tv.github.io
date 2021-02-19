@@ -22,6 +22,12 @@ layout: default
     {% endfor %}
 </ul>
 
+<h2>Pages</h2>
+<ul>
+    {% for page in site.pages %}
+    <li><a href="{{ post.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+</ul>
 
 <h2>Tags</h2>
 <ul>
