@@ -5,9 +5,9 @@ layout: post
 collections:
   docs:
     output: true
-    directory: docs
+    directory: /
     permalink: /:basename
-    relative_directory: /
+    relative_directory: docs
 
 markdown: kramdown
 kramdown:
