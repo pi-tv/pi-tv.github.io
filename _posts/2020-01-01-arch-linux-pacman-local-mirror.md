@@ -1,11 +1,11 @@
 ---
-title: Arch linux pacman local mirror
+title: Arch Linux pacman local mirror
 tags: [Arch Linux, Linux, Mirror, Pacman]
 desc: Make a local Arch mirror
 date: 2020-12-25
 ---
 
-# Arch linux pacman local mirror
+# Arch Linux pacman local mirror
 ## Make a mirror
 ```bash
 #!/bin/bash

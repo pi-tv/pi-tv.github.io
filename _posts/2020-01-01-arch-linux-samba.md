@@ -1,11 +1,11 @@
 ---
-title: Arch linux samba
+title: Arch Linux samba
 tags: [Arch Linux, Linux, Samba,  Windows]
 desc: Network SMB share setup in linux
 date: 2020-12-25
 ---
 
-# Arch linux samba
+# Arch Linux samba
 
 ## Samba server setup
 ```bash

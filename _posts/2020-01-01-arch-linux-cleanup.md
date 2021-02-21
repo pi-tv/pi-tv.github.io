@@ -1,11 +1,11 @@
 ---
-title: Arch linux cleanup
+title: Arch Linux cleanup
 tags: [Arch Linux, Linux, Cleanup]
 desc: Remove unnecessary linux files in Arch
 date: 2020-12-25
 ---
 
-# Arch linux cleanup
+# Arch Linux cleanup
 
 Sometimes disk space matters.
 

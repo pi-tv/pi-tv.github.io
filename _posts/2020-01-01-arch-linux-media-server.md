@@ -1,11 +1,11 @@
 ---
-title: Arch linux media server
+title: Arch Linux media server
 tags: [Arch Linux, Linux, DLNA, Media Server]
 desc: Setup home media server
 date: 2020-12-25
 ---
 
-# Arch linux media server
+# Arch Linux media server
 ## Minidlna
 Install `pacman -Sy minidlna`. 
 Configure "/etc/minidlna.conf"

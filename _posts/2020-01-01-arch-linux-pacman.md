@@ -1,11 +1,11 @@
 ---
-title: Arch linux pacman
+title: Arch Linux pacman
 tags: [Arch Linux, Linux, Pacman]
 desc: Pacman memos
 date: 2020-12-25
 ---
 
-# Arch linux pacman
+# Arch Linux pacman
 ## System upgrade
 ```bash
 pacman -Sy archlinux-keyring

@@ -1,6 +1,6 @@
 ---
 title: Windows notes
-tags: [Windows, Subst]
+tags: [Windows, Subst, Wmic]
 desc: Miscelanous Windows notes 
 date: 2021-02-21
 ---
