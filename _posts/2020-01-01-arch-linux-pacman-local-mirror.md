@@ -1,6 +1,6 @@
 ---
 title: Arch linux pacman local mirror
-tags: [Arch, Linux, Mirror, Pacman]
+tags: [Arch Linux, Linux, Mirror, Pacman]
 desc: Make a local Arch mirror
 date: 2020-12-25
 ---

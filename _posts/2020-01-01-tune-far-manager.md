@@ -1,6 +1,6 @@
 ---
-title: Far Manager
-tags: [Windows, Far Manager]
+title: Far Manager tune
+tags: [Far Manager, Windows]
 desc: Tune Far Manager
 date: 2021-02-21
 ---

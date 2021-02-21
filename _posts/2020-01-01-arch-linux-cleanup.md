@@ -1,6 +1,6 @@
 ---
 title: Arch linux cleanup
-tags: [Arch, Linux, Cleanup]
+tags: [Arch Linux, Linux, Cleanup]
 desc: Remove unnecessary linux files in Arch
 date: 2020-12-25
 ---
