@@ -1,6 +1,6 @@
 ---
 title: Armbian HDMI framebuffer mode
-tags: [Armbian, Linux, Orange Pi, HDMI, Framebuffer]
+tags: [Armbian, Linux, Orange Pi, HDMI, framebuffer]
 desc: Configure Orange Pi framebuffer resolution
 date: 2019-07-25
 ---

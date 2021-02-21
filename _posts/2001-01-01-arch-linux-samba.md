@@ -49,13 +49,13 @@ writeable = no
 
 
 ## Windows client
-```cmd
+```shell
 net use U: "\\myarch\private" /user:user
 net use U: /delete
 net use "\\myarch\private" /delete
 ```
 
-```cmd
+```shell
 net use V: "\\myarch\public"
 net use V: /delete
 ```
