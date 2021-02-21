@@ -1,6 +1,6 @@
 ---
 title: Armbian Orange Pi temperature
-tags: [Armbian, Linux, Orange Pi, temperature]
+tags: [Armbian, Linux, Orange Pi, Temperature]
 desc: Measure Orange Pi CPU temperature in Armbian
 date: 2019-07-25
 ---

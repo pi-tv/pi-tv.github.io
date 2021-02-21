@@ -1,6 +1,6 @@
 ---
 title:  Armbian cleanup
-tags: [Armbian, Linux, cleanup]
+tags: [Armbian, Linux, Cleanup]
 desc: Remove unnecessary linux files in Armbian
 date: 2019-07-25
 ---

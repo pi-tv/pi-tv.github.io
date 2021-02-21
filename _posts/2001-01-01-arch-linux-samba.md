@@ -1,7 +1,7 @@
 ---
 title: Arch linux samba
-tags: [Arch, Linux, samba, SMB, Windows]
-desc: Network share setup
+tags: [Arch, Linux, Samba,  Windows]
+desc: Network SMB share setup in linux
 date: 2020-12-25
 ---
 
