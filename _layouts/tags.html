@@ -25,8 +25,7 @@ layout: default
 
 <h1>Tags</h1>
 <div class="index-tags">
-    {% assign tags = site.tags | sort: '0'  %}
-    {% for tag in tags %}
+    {% for tag in site.tags %}
     <div class="index-tag">
         <h3>{{ tag[0] }}</h3>
         <ul>
