@@ -16,7 +16,7 @@ media_dir=V,/media/Video
 friendly_name=MyArch DLNA
 ```
 
-```shell script
+```bash
 systemctl enable minidlna
 systemctl start minidlna
 ```

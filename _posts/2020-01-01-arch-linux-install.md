@@ -2,20 +2,21 @@
 title: Arch Linux install
 tags: [Arch Linux, Linux]
 desc: Install Arch Linux
+date: 2020-12-25
 ---
 
 # Arch Linux install
 
 ## From ISO
-[Installation guide](https://wiki.archlinux.org/index.php/installation_guide)
+See [Installation guide](https://wiki.archlinux.org/index.php/installation_guide)
 
 ## On existing Arch using a local mirror
 Conditions:
-- [Arch pacman local mirror](todo link) exists and mounted to "/mirror"
+- [Arch pacman local mirror](/arch-linux-pacman-local-mirror) exists and mounted to "/mirror"
 - Prepared target partition is /dev/sdd1
 
 On master Arch system:
-```shell script
+```bash
 pacman -Sy arch-install-scripts
 
 mkfs.ext4 /dev/sdd1
@@ -30,7 +31,7 @@ arch-chroot /mnt/creation
 ```
 
 In chroot environment of the new system: 
-```shell script
+```bash
 echo 'Server=file:///mirror/$repo/os/$arch' >/etc/pacman.d/mirrorlist
 
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
@@ -61,14 +62,14 @@ exit
 ```
 
 Again on master Arch system:
-```shell script
+```bash
 mount /dev/sdd1
 rm /mnt/creation
 ```
 
 ## Related links
-- [Partitions](todo link)
-- [Pacman local mirror](todo link)
-- [Cleanup](todo link)
-- [Network](todo link)
-- [SSH](todo link)
+- [Partitions](/arch-linux-partitions)
+- [Pacman local mirror](/arch-linux-pacman-local-mirror)
+- [Cleanup](/arch-linux-cleanup)
+- [Network](/arch-linux-network)
+- [SSH](/arch-linux-ssh)

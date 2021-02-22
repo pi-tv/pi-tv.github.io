@@ -2,11 +2,12 @@
 title: Arch SSH
 tags: [Arch Linux, Linux, SSH]
 desc: Configure SSH server
+date: 2020-12-25
 ---
 
 # Arch SSH
 ## SSH server setup
-```shell script
+```bash
 pacman -Sy openssh
 systemctl enable sshd
 systemctl start sshd
