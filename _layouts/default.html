@@ -110,17 +110,21 @@
             text-decoration: none;
         }
 
+        header a:link {
+            color: black;
+        }
+
         header hr {
             height: 5px;
             background: linear-gradient(90deg,
             dodgerblue 0px,
-            dodgerblue 100px,
+            dodgerblue 95px,
             red 100px,
-            red 125px,
-            yellow 125px,
-            yellow 150px,
-            lime 150px,
-            lime 175px,
+            red 120px,
+            gold 125px,
+            gold 145px,
+            limegreen  150px,
+            limegreen  170px,
             dodgerblue 175px,
             dodgerblue 80%,
             transparent 90%
@@ -164,7 +168,13 @@
 
 </head>
 <body>
-
+<header>
+    <a href="/">Pi-TV</a>
+    <hr/>
+    <div id="tags">
+        <span style="float:right">{{ site.time | date: "%Y-%m-%d"  }}</span>
+    </div>
+</header>
 {{ content }}
 
 <footer>
