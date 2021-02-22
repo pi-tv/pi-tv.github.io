@@ -25,6 +25,7 @@ rsync $RSYNC_OPTS $SRC/lastsync $OUT
 ```
 
 Set `Server=file:///mirror/$repo/os/$arch` into the "/etc/pacman.d/mirrorlist".
+
 Add `/dev/sdc  /mirror  ext4  ro,relatime  0 2` into the "/etc/fstab".
 
 Mount via `mount /mirror` or via `mount --read-only /dev/sdc /mirror`

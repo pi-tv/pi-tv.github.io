@@ -15,9 +15,7 @@ fdisk -l
 ## Create single full-sized partition
 ```shell
 fdisk /dev/sdd
-```
-then:
-```
+
 > n 1
 > t 83
 > w

@@ -2,7 +2,7 @@
 title: Arch Linux network
 tags: [Arch Linux, Linux, Network]
 desc: Configure linux network
-partitions
+date: 2021-02-21
 ---
 
 # Arch Linux network
