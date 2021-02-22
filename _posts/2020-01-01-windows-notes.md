@@ -14,8 +14,9 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "W:" /t REG_SZ /
 ```
 
 ## Wmic
-List all installed apps: `product get name`
-Uninstall by name: `product where name="ProgramNameToDelete" call uninstall`
+Run `wmic` in the terminal and then:
+- List all installed apps: `product get name`
+- Uninstall by name: `product where name="ProgramNameToDelete" call uninstall`
 
 ## Turn off hibernate
-As admin: `powercfg -h off`
+As admin run in the terminal: `powercfg -h off`
