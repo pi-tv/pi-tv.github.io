@@ -78,6 +78,7 @@ header a {
     font-size: 2rem;
     line-height: 3rem;
     text-decoration: none;
+    float: left;
 }
 
 header a:link {
@@ -103,6 +104,10 @@ header hr {
 
 ul {
     list-style-position: inside;
+}
+
+#search {
+    margin: 0 100px;
 }
 
 #tags {
