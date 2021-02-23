@@ -1,7 +1,7 @@
 ---
 title: Orange Pi Zero network speed test
 tags: [Armbian, Linux, Orange Pi, Network]
-desc: Measure ethernet and wi-fi speed of Orange Pi Zero
+desc: Measure ethernet and wi-fi speed in Orange Pi Zero
 date: 2019-07-25
 ---
 

@@ -1,11 +1,11 @@
 ---
-title: Windows sysinternals
+title: Sysinternals
 tags: [Windows, Sysinternals]
 desc: Sysinternals tricks 
 date: 2021-02-21
 ---
 
-# Windows sysinternals
+# Sysinternals
 
 ## PsExec
 

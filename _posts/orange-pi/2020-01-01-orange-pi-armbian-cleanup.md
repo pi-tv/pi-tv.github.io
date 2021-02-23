@@ -1,11 +1,11 @@
 ---
-title:  Armbian cleanup
-tags: [Armbian, Linux, Cleanup]
+title: Orange Pi Armbian cleanup
+tags: [Armbian, Linux, Orange Pi, Cleanup]
 desc: Remove unnecessary linux files in Armbian
 date: 2019-07-25
 ---
 
-# Armbian cleanup
+# Orange Pi Armbian cleanup
 
 ## Disable auto-updates
 

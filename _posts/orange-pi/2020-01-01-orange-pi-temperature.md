@@ -46,4 +46,4 @@ fi
 
 Like this:
 
-![Show temperature output](/resources/armbian-orange-pi-temperature/screenshot.png)
+![Show temperature output](/resources/orange-pi-temperature/screenshot.png)

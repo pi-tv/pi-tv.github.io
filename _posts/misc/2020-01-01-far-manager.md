@@ -1,5 +1,5 @@
 ---
-title: Far Manager tune
+title: Far Manager
 tags: [Far Manager, Windows]
 desc: Tune Far Manager
 date: 2021-02-21
@@ -7,7 +7,7 @@ date: 2021-02-21
 
 # Far manager
 
-## Backup menu item
+## Create menu item for making backup
 
 - Add a directory where "rar.exe" is located into the PATH
 - Far -> F2 -> Insert command
