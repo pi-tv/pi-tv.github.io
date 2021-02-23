@@ -9,9 +9,9 @@ date: 2021-02-21
 
 ## Samba
 ### Allow unauthenticated guest access to Samba share
-Run `gpedit.msc`
-Then go to `Comp -> Administrative Templates -> Network -> Lanman Workstation`
-And set `Enable insecure guest logons = Enabled`
+- Run `gpedit.msc`
+- Then go to `Comp -> Administrative Templates -> Network -> Lanman Workstation`
+- Set `Enable insecure guest logons = Enabled`
 
 ### Mount/unmount Samba share
 - Mount share: `net use S: "\\myServerName\myShare" /user:myDomain\myUsername myPassword`

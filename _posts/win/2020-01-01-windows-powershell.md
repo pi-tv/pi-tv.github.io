@@ -13,7 +13,7 @@ Run: `powershell -NonInteractive -ExecutionPolicy Bypass -File myScript.ps1 %*`
 
 Run headless Google Chrome under the particular user and take a screenshot using Powershell:
 
-```ps1
+```powershell
 echo "PS Args: $args"
 
 $ProcessInfo = New-Object System.Diagnostics.ProcessStartInfo

@@ -1,6 +1,6 @@
 ---
 title: Arch Linux X-Server
-tags: [Arch Linux, Linux, X, VcXsrv, Windows]
+tags: [Arch Linux, Linux, X, VcXsrv, Windows, Firefox]
 desc: Connect to X-Server on Arch
 date: 2020-12-25
 ---
@@ -18,6 +18,11 @@ date: 2020-12-25
 ### VcXsrv
 - `XLaunch -> Properties -> Compability -> Change high DPI settings = Application`
 
-### Firefox
+## X-Sever apps
+### Linux side
 - Install `pacman -Sy firefox`
+- Run `firefox`
+
+### Windows side
 - `Firefox -> about:config -> gfx.xrender.enabled = true`
+- Use it from Windows
