@@ -14,7 +14,7 @@ Sure, you can buy a ready-made solution: Smart TV, Media player, or just connect
 But engineer inside says:
 
 *- Why not to create it on my own? Make it the way I want.
-And to give a second life to the devices I already have.*
+Give a second life to the devices I already have.*
 
 
 Most of Pi boards have HDMI or AV outputs (via connectors, expansion boards or special pins).
