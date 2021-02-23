@@ -1,11 +1,11 @@
 ---
-title: Setup Wi-Fi on Ubuntu Server
+title: Ubuntu setup Wi-Fi
 tags: [Ubuntu, Linux, Network]
 desc: Configure Wi-Fi on Ubuntu Server
 date: 2018-05-09
 ---
 
-# Setup Wi-Fi on Ubuntu Server
+# Ubuntu Server setup Wi-Fi
 
 Ubuntu Server (16.04 LTS) installer provides a handy interface to setup Wi-Fi during the installation.
 But when I've completed installation and restarted the server - Wi-Fi was not available. 
