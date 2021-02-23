@@ -14,18 +14,18 @@ date: 2017-06-12
 - you have a Windows laptop with both Ethernet and Wi-Fi
 - you have an Ethernet-cable
 
-![Orange Pi - Laptop - Access Point](/orange-pi-through-windows-wifi-bridge/orange_pi-laptop-access_point.png)
+![Orange Pi - Laptop - Access Point](/resources/orange-pi-through-windows-wifi-bridge/orange_pi-laptop-access_point.png)
 
 
 ## Step 1: Share Wi-Fi
 
 Open Wi-Fi adapter settings and enable "Internet Connetsion Sharing":
 
-![Share Wi-fi](/orange-pi-through-windows-wifi-bridge/share-wifi-win-lan-access-1.png)
+![Share Wi-fi](/resources//orange-pi-through-windows-wifi-bridge/share-wifi-win-lan-access-1.png)
 
 Remember IP-address from next confirmation window:
 
-![Share confirmation](/orange-pi-through-windows-wifi-bridge/share-wifi-win-lan-access-1.png)
+![Share confirmation](/resources//orange-pi-through-windows-wifi-bridge/share-wifi-win-lan-access-1.png)
 
 As a result you will have a new LAN with DHCP.
 
