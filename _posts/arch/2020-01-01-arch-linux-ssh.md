@@ -1,11 +1,11 @@
 ---
-title: Arch SSH
+title: Arch Linux SSH
 tags: [Arch Linux, Linux, SSH]
 desc: Configure SSH server
 date: 2020-12-25
 ---
 
-# Arch SSH
+# Arch Linux SSH
 ## SSH server setup
 ```bash
 pacman -Sy openssh

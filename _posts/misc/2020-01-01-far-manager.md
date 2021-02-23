@@ -9,8 +9,8 @@ date: 2021-02-21
 
 ## Create menu item for making backup
 
-- Add a directory where "rar.exe" is located into the PATH
-- Far -> F2 -> Insert command
-
-Label: `rar !.!`
-Command: `rar a -r -m5 -k -s -ag-YYYY.MM.DD_HH.MM "!.!".rar "!.!"`
+- Add a directory where `rar.exe` is located into the PATH
+- Open `Far -> F2 -> Insert`
+- Insert command
+  - Label: `rar !.!`
+  - Command: `rar a -r -m5 -k -s -ag-YYYY.MM.DD_HH.MM "!.!".rar "!.!"`

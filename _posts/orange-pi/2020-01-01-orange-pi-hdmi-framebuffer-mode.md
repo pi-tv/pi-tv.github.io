@@ -1,11 +1,11 @@
 ---
-title: Armbian HDMI framebuffer mode
+title: Orange Pi HDMI framebuffer mode
 tags: [Armbian, Linux, Orange Pi, HDMI, Framebuffer]
 desc: Configure Orange Pi framebuffer resolution
 date: 2019-07-25
 ---
 
-# Armbian HDMI framebuffer mode
+# Orange Pi HDMI framebuffer mode
 
 My Orange Pi PC 2 (Armbian 5.83 with a mainline kernel) always outputs video to HDMI TV using the **1920x1080@60** mode. 
 Loader gets this resolution from the TV itself.
