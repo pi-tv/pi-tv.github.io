@@ -6,7 +6,7 @@ layout: default
     <a href="/">Pi-TV</a>
     <hr/>
     <div id="tags">
-        <span style="float:right">{{ site.time | date: "%Y-%m-%d"  }}</span>
+        <span style="float:right">{{ site.time | date: "%Y-%m-%d" }}</span>
     </div>
 </header>
 
@@ -14,7 +14,7 @@ layout: default
     {{ content }}
 </article>
 
-<h2>Articles <small>({% site.posts.size %})</small></h2>
+<h2>Articles <small>({{ site.posts.size }})</small></h2>
 
 <ul>
     {% assign posts = site.posts | sort: 'title'  %}
