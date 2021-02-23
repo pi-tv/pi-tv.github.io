@@ -1,6 +1,6 @@
 ---
 title: Sysinternals
-tags: [Windows, Sysinternals]
+tags: [Windows, Sysinternals, RunAs]
 desc: Sysinternals tricks 
 date: 2021-02-21
 ---
@@ -9,7 +9,7 @@ date: 2021-02-21
 
 ## PsExec
 
-Run headless Google Chrome under the particular user and take a screenshot
+Run headless Google Chrome under the particular user and take a screenshot using PsExec:
 
 ```shell
 psexec -accepteula -u myDomain\myUsername -p myPassword ^
