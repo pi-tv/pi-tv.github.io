@@ -1,6 +1,6 @@
 ---
 title: Arch Linux partitions
-tags: [Arch Linux, Linux, fdisk]
+tags: [Arch Linux, Linux]
 desc: Partition management in Arch Linux
 date: 2020-12-25
 ---
