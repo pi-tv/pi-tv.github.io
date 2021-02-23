@@ -1,11 +1,11 @@
 ---
-title: Armbian Orange Pi temperature
+title: Orange Pi temperature
 tags: [Armbian, Linux, Orange Pi, Temperature]
 desc: Measure Orange Pi CPU temperature in Armbian
 date: 2019-07-25
 ---
 
-# Armbian Orange Pi temperature
+# Orange Pi temperature
 
 Hardware information in Orange Pi is available via a "/sys" filesystem.
 

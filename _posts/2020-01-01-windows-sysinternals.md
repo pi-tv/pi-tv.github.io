@@ -7,9 +7,11 @@ date: 2021-02-21
 
 # Windows sysinternals
 
-## Run headless Google Chrome under the particular user and take a screenshot
+## PsExec
 
-```shel
+Run headless Google Chrome under the particular user and take a screenshot
+
+```shell
 psexec -accepteula -u myDomain\myUsername -p myPassword ^
   "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" ^
   --headless --disable-gpu --virtual-time-budget=10000  ^
