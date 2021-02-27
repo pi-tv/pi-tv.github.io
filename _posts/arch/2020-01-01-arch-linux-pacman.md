@@ -26,4 +26,4 @@ pacman -Scc
 ```
 
 ## Related links
-[Pacman local mirror](/arch-linux-pacman-local-mirror)
+- [Pacman local mirror](/arch-linux-pacman-local-mirror)

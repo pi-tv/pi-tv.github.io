@@ -1,6 +1,6 @@
 ---
 title: Disable auto update in Firefox
-tags: [Firefox, Windows]
+tags: [Firefox, Windows, MyDeviceMyRules]
 desc: Turn off auto updates in Firefox
 ---
 
@@ -16,3 +16,6 @@ Just create "C:\Program Files\Mozilla Firefox\distribution\policies.json" file w
 ```
 
 Then restart Firefox. This disables Firefox updates.
+
+## Related links
+- [Debloat Firefox](/debloat-firefox)
