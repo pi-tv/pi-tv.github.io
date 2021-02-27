@@ -10,7 +10,27 @@ layout: default
     }
 
     .index-tag {
-        flex: 1 0 30%;
+        box-sizing: border-box;
+        flex: 1 0 auto;
+        padding: 0 10px;
+        width: 30%;
+    }
+
+    @media screen and (max-width: 1000px){
+        .index-tag {
+            width: 45%;
+        }
+    }
+
+    @media screen and (max-width: 500px){
+        .index-tags {
+            display: block;
+        }
+
+        .index-tag {
+            flex: none;
+            width: auto;
+        }
     }
 </style>
 

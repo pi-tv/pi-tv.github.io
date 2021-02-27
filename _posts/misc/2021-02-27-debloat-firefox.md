@@ -7,6 +7,7 @@ desc: Turn off unwanted features in Firefox
 # Debloat Firefox
 
 Some features in Firefox can be disabled by creating the enterprise policy file.
+
 In Windows the file is expected here: "C:\Program Files\Mozilla Firefox\distribution\policies.json".
 
 These options:
