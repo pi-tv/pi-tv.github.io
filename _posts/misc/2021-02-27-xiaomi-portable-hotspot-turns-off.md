@@ -6,10 +6,10 @@ desc: Fix auto stopping of a mobile hotspot in Android.
 
 # Xiaomi portable hotspot turns off after 5 minutes 
 
-Mobile hotspot automatically turn off after some minutes, when smartphone is locked.
+Mobile hotspot automatically turns off after some minutes, when a phone is locked.
 And laptop, connected through this hotspot disconnects from the internet again and again?
 
-This solved the problem for me:
+This solved the problem for me and made the hotspot work:
 
 ```text
 Settings -> 

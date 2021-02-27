@@ -14,3 +14,5 @@ Just create "C:\Program Files\Mozilla Firefox\distribution\policies.json" file w
   }
 }
 ```
+
+Then restart Firefox. This disables Firefox updates.
