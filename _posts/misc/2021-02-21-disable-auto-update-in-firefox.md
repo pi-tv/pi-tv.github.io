@@ -1,12 +1,10 @@
 ---
-title: Firefox
+title: Disable auto update in Firefox
 tags: [Firefox, Windows]
-desc: Tune Firefox
-date: 2021-02-21
+desc: Turn off auto updates in Firefox
 ---
 
-# Firefox
-## Disable auto-updates
+# Disable auto update in Firefox
 
 Just create "C:\Program Files\Mozilla Firefox\distribution\policies.json" file with this content:
 ```json
@@ -16,4 +14,3 @@ Just create "C:\Program Files\Mozilla Firefox\distribution\policies.json" file w
   }
 }
 ```
-

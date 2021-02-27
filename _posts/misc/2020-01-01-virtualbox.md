@@ -14,6 +14,7 @@ date: 2021-02-23
 
 ## Devices
 - Show list of host USB devices: `vboxmanage list usbhost`
+- Enable USB3 mode: `vboxmanage modifyvm myArch --usbxhci on`
 - Attach USB device: `vboxmanage controlvm myArch usbattach MyUUID`
 - Detach USB device: `vboxmanage controlvm myArch usbdetach MyUUID`
 
