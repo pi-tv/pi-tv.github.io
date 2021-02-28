@@ -75,7 +75,9 @@ header a {
     cursor: pointer;
     font-size: 2rem;
     text-decoration: none;
+    display: block;
     float: left;
+    height: 60px;
 }
 
 header a:link {
