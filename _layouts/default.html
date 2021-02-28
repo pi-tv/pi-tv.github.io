@@ -71,7 +71,7 @@
     </div>
     <hr/>
     <div id="tags">
-        # {% for tag in page.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        {{ page.tags | array_to_sentence_string }}
         <span style="float:right">{{ page.date | default: site.time | date: "%Y-%m-%d"  }}</span>
     </div>
 
