@@ -2,6 +2,7 @@
 layout: index
 title: Pi-TV
 desc: Developer notes
+tags: [Main]
 ---
 
 # Intro
