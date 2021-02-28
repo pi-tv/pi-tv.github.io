@@ -52,7 +52,6 @@ code {
 }
 
 header {
-    height: 80px;
     background-image: url("/assets/images/pi-tv-icon-80.png");
     background-position: right top;
     background-repeat: no-repeat;
@@ -72,11 +71,9 @@ footer {
 }
 
 header a {
-    display: inline-block;
     font-family: Consolas, "Lucida Console", monospace;
     cursor: pointer;
     font-size: 2rem;
-    line-height: 3rem;
     text-decoration: none;
     float: left;
 }
@@ -116,8 +113,7 @@ ul {
 }
 
 #tags {
-    margin: 10px 100px 10px 0;
+    margin: 10px;
     font-size: 14px;
-    line-height: 1.5;
     font-family: Consolas, "Lucida Console", monospace;
 }
