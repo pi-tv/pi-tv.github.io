@@ -60,16 +60,17 @@
 <body>
 
 <header>
-    <div style="display: flex; justify-content: space-between; margin-right: 100px;">
-    <a href="/">Pi-TV</a>
-    <div id="search">
-        <script async src="https://cse.google.com/cse.js?cx=58f7c0f790c204ed6"></script>
-        <div class="gcse-searchbox"></div>
-    </div>
+    <div style="display: flex;justify-content: space-between;margin-right: 100px;min-height: 60px;align-items: center;flex-wrap: wrap;">
+        <a href="/" style="flex: 1 0 auto">Pi-TV</a>
+        <div id="search" style="flex: 2 0 auto">
+            <script async src="https://cse.google.com/cse.js?cx=58f7c0f790c204ed6"></script>
+            <div class="gcse-searchbox"></div>
+        </div>
     </div>
     <hr/>
     <div id="tags">
-        <span style="float:right">{{ site.time | date: "%Y-%m-%d" }}</span>
+        # {% for tag in page.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        <span style="float:right">{{ page.date | date: "%Y-%m-%d"  }}</span>
     </div>
 
     <div class="gcse-searchresults"></div>

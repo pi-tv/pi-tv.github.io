@@ -75,7 +75,6 @@ header a:link {
 }
 
 header hr {
-    clear: both;
     height: 5px;
     background: linear-gradient(90deg,
     dodgerblue 0px,
@@ -96,12 +95,7 @@ ul {
     list-style-position: inside;
 }
 
-#search {
-    flex: 1 0 auto;
-}
-
 #content {
-    clear:both;
 }
 
 #tags {
