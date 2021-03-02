@@ -1,6 +1,6 @@
 ---
 title: Ubuntu keep working on closed lid
-tags: [Ubuntu, Linux, Power]
+tags: [Ubuntu, Linux]
 desc: Keep working on laptop even if the lid is closed
 ---
 
