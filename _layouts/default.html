@@ -71,7 +71,7 @@
     </div>
     <hr/>
     <div id="tags">
-        {{ page.tags | array_to_sentence_string }}
+        # {{ page.tags | array_to_sentence_string }}
         <span style="float:right">{{ page.date | default: site.time | date: "%Y-%m-%d"  }}</span>
     </div>
 

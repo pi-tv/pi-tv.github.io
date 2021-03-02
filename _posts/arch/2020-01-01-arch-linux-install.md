@@ -25,7 +25,7 @@ mkdir /mnt/creation
 
 mount /dev/sdd1 /mnt/creation
 
-pacstrap /mnt/creation base linux man pacman mc vim netctl htop syslinux
+pacstrap /mnt/creation base linux man pacman mc vim netctl wget syslinux
 #+arch-firmware for real machines
 
 mkdir /mnt/creation/mirror
@@ -38,8 +38,13 @@ In chroot environment of the new system:
 echo 'Server=file:///mirror/archlinux/$repo/os/$arch' >/etc/pacman.d/mirrorlist
 
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+
+cat >/etc/locale.conf <<EOF
+LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+EOF
+
 echo 'en_US.UTF-8 UTF-8' >/etc/locale.gen
-localectl set-locale en_US.UTF-8
 locale-gen
 
 cat >/etc/fstab <<EOF
@@ -93,3 +98,4 @@ systemctl status sshd
 - [Cleanup](/arch-linux-cleanup)
 - [Network](/arch-linux-network)
 - [SSH](/arch-linux-ssh)
+- [Xfce](/arch-linux-xfce)

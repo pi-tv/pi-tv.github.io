@@ -17,6 +17,6 @@ date: 2021-02-23
 - Enable USB3 mode: `vboxmanage modifyvm myArch --usbxhci on`
 - Attach USB device: `vboxmanage controlvm myArch usbattach MyUUID`
 - Detach USB device: `vboxmanage controlvm myArch usbdetach MyUUID`
-
+- Reset disk UUID: `vboxmanage internalcommands sethduuid myArch.vdi`
 
 
