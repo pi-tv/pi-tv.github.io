@@ -25,7 +25,7 @@ mkdir /mnt/creation
 
 mount /dev/sdd1 /mnt/creation
 
-pacstrap /mnt/creation base linux man pacman mc vim netctl wget syslinux
+pacstrap /mnt/creation base linux man pacman mc vim netctl wget syslinux bash-completion
 #+arch-firmware for real machines
 
 mkdir /mnt/creation/mirror

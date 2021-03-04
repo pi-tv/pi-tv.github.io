@@ -9,6 +9,7 @@ desc: Turn off unwanted features in Firefox
 Some features in Firefox can be disabled by creating the enterprise policy file.
 
 In Windows the file is expected here: "C:\Program Files\Mozilla Firefox\distribution\policies.json".
+For Linux, it is "/usr/lib/firefox/distribution/policies.json".
 
 These options:
 ```json

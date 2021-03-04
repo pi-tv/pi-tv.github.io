@@ -25,3 +25,49 @@ fi
 - Remove some unwanted menu-items (".desktop" files) from /usr/share/applications
 - Set `Categories=X-Xfce-Toplevel` for some menu-items (by editing the ".desktop" files)
 
+## Start menu
+```xml
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+  "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
+<Menu>
+    <Name>Xfce</Name>
+
+    <DefaultAppDirs/>
+    <DefaultDirectoryDirs/>
+
+    <Include>
+        <All/>
+    </Include>
+
+    <Layout>
+        <Filename>xfce4-run.desktop</Filename>
+        <Menuname>Settings</Menuname>
+        <Filename>xfce4-terminal.desktop</Filename>
+        <Separator/>
+        <Filename>firefox.desktop</Filename>
+        <Filename>opera.desktop</Filename>
+        <Separator/>
+        <Filename>mousepad.desktop</Filename>
+        <Filename>gimp.desktop</Filename>
+        <Filename>arduino.desktop</Filename>
+        <Filename>pycharm.desktop</Filename>
+        <Separator/>
+        <Filename>xfce4-session-logout.desktop</Filename>
+    </Layout>
+
+    <Menu>
+        <Name>Settings</Name>
+        <Include>
+            <Category>Settings</Category>
+        </Include>
+
+        <Layout>
+            <Filename>xfce-settings-manager.desktop</Filename>
+            <Separator/>
+            <Merge type="all"/>
+        </Layout>
+    </Menu>
+
+</Menu>
+```
+
