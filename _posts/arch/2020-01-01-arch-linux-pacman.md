@@ -25,5 +25,10 @@ pacman -Ss qemu # list packages
 pacman -Scc
 ```
 
+## Misc
+```bash
+pacman -Rs package # remove with dependencies
+```
+
 ## Related links
 - [Pacman local mirror](/arch-linux-pacman-local-mirror)

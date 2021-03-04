@@ -26,6 +26,10 @@ fi
 - Set `Categories=X-Xfce-Toplevel` for some menu-items (by editing the ".desktop" files)
 
 ## Start menu
+
+This reduced main menu created according to
+[menu specification](https://specifications.freedesktop.org/menu-spec/menu-spec-1.0.html)
+
 ```xml
 <!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
   "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
