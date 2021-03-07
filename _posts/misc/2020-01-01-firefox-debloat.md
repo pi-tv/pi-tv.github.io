@@ -1,6 +1,6 @@
 ---
 title: Debloat Firefox
-tags: [Firefox, Windows, MyDeviceMyRules]
+tags: [Firefox, Windows, #MyDeviceMyRules]
 desc: Turn off unwanted features in Firefox
 date: 2021-02-27
 ---

@@ -9,33 +9,24 @@ date: 2017-07-30
 
 ![Red tiles](/resources/gimp-red-tiles/red-tiles.png)
 
-- Create image 1000x1000, on the "Background" layer do: 
-
-- `Filter -> Render -> Clouds -> Solid Noise`
-
+1. Create image 1000x1000
+2. In the "Background" layer do: 
+2.1. `Filter -> Render -> Clouds -> Solid Noise`
 ![Solid Noise filter](/resources/gimp-red-tiles/01.png)
-
-- `Filters -> Noise -> RGB Noise`
-
+2.2. Create noise: `Filters -> Noise -> RGB Noise`
 ![RGB Noise filter](/resources/gimp-red-tiles/02.png)
-
-- `Filters -> Blur -> Motion Blur`
-
+2.3. Blur it: `Filters -> Blur -> Motion Blur`
 ![Motion Blur filter](/resources/gimp-red-tiles/03.png)
-
-- On the "Inter" layer do: `Colors -> Colorize... -> Hue = 1`
-
+2.4. Then do: `Colors -> Colorize... -> Hue = 1`
 ![Colorize Hue](/resources/gimp-red-tiles/04.png)
 
-- Create new layer "Tiles", on the "Tiles" layer do: 
-
-- Fill it with "#AA2222" color
-- `Filter -> Distort -> Mosaic`
-
+3. Create new layer "Tiles"
+3.1. Fill "Tiles" layer with "#AA2222" color.
+3.2. Then `Filter -> Distort -> Mosaic`
 ![Mosaic filter](/resources/gimp-red-tiles/11.png)
-
-- Change opacity to 75
-
+3.3. Change opacity to 75
 ![Summary](/resources/gimp-red-tiles/12.png)
+
+Done!
 
 Source [.xcf file](/resources/gimp-red-tiles/red-tiles.xcf)
