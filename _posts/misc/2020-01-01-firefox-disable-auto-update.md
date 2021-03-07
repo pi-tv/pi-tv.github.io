@@ -11,11 +11,12 @@ Just create a "policies.json" file located at:
 - For Windows: "C:\Program Files\Mozilla Firefox\distribution"
 - For Linux: "/usr/lib/firefox/distribution"
 with this content:
+
 ```json
 {
-  "policies": {
-    "DisableAppUpdate": true
-  }
+    "policies": {
+        "DisableAppUpdate": true
+    }
 }
 ```
 
