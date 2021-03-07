@@ -1,11 +1,11 @@
 ---
-title: Disable auto update in Firefox
+title: Firefox disable auto update
 tags: [Firefox, Windows, Linux, MyDeviceMyRules]
 desc: Turn off auto updates in Firefox
 date: 2021-02-21
 ---
 
-# Disable auto update in Firefox
+# Firefox disable auto update
 
 Just create a "policies.json" file located at:
 - For Windows: "C:\Program Files\Mozilla Firefox\distribution"
