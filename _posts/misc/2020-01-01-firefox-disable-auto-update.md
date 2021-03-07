@@ -22,4 +22,4 @@ with this content:
 Then restart Firefox. This disables Firefox updates.
 
 ## Related links
-- [Debloat Firefox](/debloat-firefox)
+- [Firefox debloat](/firefox-debloat)

@@ -42,4 +42,4 @@ Full list of options is available
 [here](https://github.com/mozilla/policy-templates/blob/master/windows/en-US/firefox.adml).
 
 ## Related links
-- [Disable auto update in Firefox](/disable-auto-update-in-firefox)
+- [Firefox disable auto update](/firefox-disable-auto-update)
