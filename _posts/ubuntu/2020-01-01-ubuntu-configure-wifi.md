@@ -2,6 +2,7 @@
 title: Ubuntu configure Wi-Fi
 tags: [Ubuntu, Linux, Network]
 desc: Configure Wi-Fi on Ubuntu Server
+date: 2018-05-09
 ---
 
 # Ubuntu configure Wi-Fi

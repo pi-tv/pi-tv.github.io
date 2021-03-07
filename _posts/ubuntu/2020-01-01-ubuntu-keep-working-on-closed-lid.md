@@ -2,6 +2,7 @@
 title: Ubuntu keep working on closed lid
 tags: [Ubuntu, Linux]
 desc: Keep working on laptop even if the lid is closed
+date: 2018-05-18
 ---
 
 # Ubuntu keep working on closed lid

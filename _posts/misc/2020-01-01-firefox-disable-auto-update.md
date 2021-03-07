@@ -2,6 +2,7 @@
 title: Disable auto update in Firefox
 tags: [Firefox, Windows, Linux, MyDeviceMyRules]
 desc: Turn off auto updates in Firefox
+date: 2021-02-21
 ---
 
 # Disable auto update in Firefox

@@ -2,6 +2,7 @@
 title: Xiaomi portable hotspot turns off after 5 minutes
 tags: [Android, Xiaomi, Wi-Fi]
 desc: Fix auto stopping of a mobile hotspot in Android.
+date: 2021-02-27
 ---
 
 # Xiaomi portable hotspot turns off after 5 minutes 
