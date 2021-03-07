@@ -10,7 +10,8 @@ date: 2021-02-21
 Just create a "policies.json" file located at:
 - For Windows: "C:\Program Files\Mozilla Firefox\distribution"
 - For Linux: "/usr/lib/firefox/distribution"
-with this content:
+
+Having this content:
 
 ```json
 {
