@@ -1,11 +1,11 @@
 ---
-title: Debloat Firefox
-tags: [Firefox, Windows, #MyDeviceMyRules]
+title: Firefox debloat
+tags: [Firefox, Windows, MyDeviceMyRules]
 desc: Turn off unwanted features in Firefox
 date: 2021-02-27
 ---
 
-# Debloat Firefox
+# Firefox debloat
 
 Some features in Firefox can be disabled by creating the enterprise policy file.
 
