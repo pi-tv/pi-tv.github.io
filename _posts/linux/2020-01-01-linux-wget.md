@@ -1,11 +1,12 @@
 ---
-title: Linux make site mirror
+title: Linux wget
 tags: [Linux, Wget]
-desc: Create a local copy of web site
-date: 2007-06-11
+desc: Create wget
+date: 2021-03-11
 ---
 
-# Linux make site mirror
+# Linux wget
+## Make a site mirror
 
 Copy content of a remote site for offline viewing, "site-mirror.sh":
 
@@ -15,5 +16,4 @@ Copy content of a remote site for offline viewing, "site-mirror.sh":
 SITE='https://pi-tv.github.io'
 
 wget --mirror --no-parent --page-requisites --convert-links --adjust-extension $SITE 2>&1 |tee site-mirror.log
-
 ```

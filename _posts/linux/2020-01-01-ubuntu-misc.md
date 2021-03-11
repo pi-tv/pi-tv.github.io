@@ -1,11 +1,12 @@
 ---
-title: Ubuntu keep working on closed lid
+title: Ubuntu misc
 tags: [Ubuntu, Linux]
-desc: Keep working on laptop even if the lid is closed
-date: 2018-05-18
+desc: Ubuntu misc
+date: 2021-03-11
 ---
 
-# Ubuntu keep working on closed lid
+# Ubuntu misc
+## Ubuntu keep working on closed lid
 
 To keep working on laptop even if the lid is closed
 set `HandleLidSwitch=ignore` in the "/etc/systemd/logind.conf" file. 

@@ -1,11 +1,12 @@
 ---
-title: Ubuntu configure Wi-Fi
+title: Ubuntu network
 tags: [Ubuntu, Linux, Network]
-desc: Configure Wi-Fi on Ubuntu Server
-date: 2018-05-09
+desc: Configure network on Ubuntu Server
+date: 2021-03-11
 ---
 
-# Ubuntu configure Wi-Fi
+# Ubuntu network
+## Configure Wi-Fi
 
 Ubuntu Server (16.04 LTS) installer provides a handy interface to use Wi-Fi during the installation.
 But when I've completed installation and restarted the server - Wi-Fi was not available. 
