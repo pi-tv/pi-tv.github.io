@@ -2,7 +2,7 @@
 title: Arch Linux install
 tags: [Arch Linux, Linux]
 desc: Install Arch Linux
-date: 2020-12-25
+date: 2021-03-11
 ---
 
 # Arch Linux install
@@ -10,7 +10,7 @@ date: 2020-12-25
 Pre-conditions:
 - Target partition is /dev/sdd1
 - Mirror partition is /dev/sdb
-- [Arch pacman local mirror](/arch-linux-pacman-local-mirror) exists and mounted to "/mirror". I.e:
+- [Arch Linux local mirror](/arch-linux-pacman#arch-linux-local-mirror) exists and mounted to "/mirror". I.e:
 ```bash
 echo 'Server=file:///mirror/archlinux/$repo/os/$arch' >/etc/pacman.d/mirrorlist
 mount -r /dev/sdb /mirror
@@ -94,7 +94,7 @@ systemctl status sshd
 
 ## Related links
 - [Partitions](/arch-linux-partitions)
-- [Pacman local mirror](/arch-linux-pacman-local-mirror)
+- [Pacman](/arch-linux-pacman)
 - [Cleanup](/arch-linux-cleanup)
 - [Network](/arch-linux-network)
 - [SSH](/arch-linux-ssh)
