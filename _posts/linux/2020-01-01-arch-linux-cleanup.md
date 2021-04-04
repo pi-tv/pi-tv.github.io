@@ -10,7 +10,7 @@ date: 2021-03-11
 Sometimes disk space matters.
 
 Linux includes a lot of redundant files.
-As a German - do you need man files or locales in Chinese? In most cases - No.
+As a Japanese - do you need man files or locales in German? In most cases - No.
 
 ## Analyze disk usage
 - `df -h /` - disk size, used and free space for root

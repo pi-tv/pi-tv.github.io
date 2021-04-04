@@ -55,6 +55,7 @@ This reduced main menu created according to
         <Filename>gimp.desktop</Filename>
         <Filename>arduino.desktop</Filename>
         <Filename>pycharm.desktop</Filename>
+        <Filename>idea.desktop</Filename>
         <Separator/>
         <Filename>xfce4-session-logout.desktop</Filename>
     </Layout>
