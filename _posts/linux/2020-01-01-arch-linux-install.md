@@ -7,59 +7,91 @@ date: 2021-03-11
 
 # Arch Linux install
 
-Pre-conditions:
-- Target partition is /dev/sdd1
-- Mirror partition is /dev/sdb
-- [Arch Linux local mirror](/arch-linux-pacman#arch-linux-local-mirror) exists and mounted to "/mirror". I.e:
+## Pre-conditions:
+- Install into the VirtualBox
+- Install from the Arch ISO
+- Target partition is /dev/sda1
+- Swap partition is /dev/sdb
+- There is a local pacman mirror partition at /dev/sdc
+
+## Initial SSH (optional)
+Much more comfortable to copy-paste commands from host machine via SSH.
+Enable SSH access:
 ```bash
-echo 'Server=file:///mirror/archlinux/$repo/os/$arch' >/etc/pacman.d/mirrorlist
-mount -r /dev/sdb /mirror
+passwd
+systemctl start sshd
 ```
 
-On the master Arch system:
+## Prepare disks
 ```bash
-pacman -Sy arch-install-scripts #don't need when installing from ISO
+fdisk /dev/sda
+> n
+> p
+> 1
+>
+> w
 
-mkfs.ext4 /dev/sdd1
-mkdir /mnt/creation
-
-mount /dev/sdd1 /mnt/creation
-
-pacstrap /mnt/creation base linux man pacman mc vim netctl wget syslinux bash-completion
-#+arch-firmware for real machines
-
-mkdir /mnt/creation/mirror
-mount --bind --read-only /mirror /mnt/creation/mirror
-arch-chroot /mnt/creation
+mkfs.ext4 /dev/sda1 -L root
+mkswap /dev/sdb -L swap
 ```
 
-In chroot environment of the new system: 
+## Mount mirror
 ```bash
+mkdir /mirror
+mount -r /dev/sdc /mirror
+
 echo 'Server=file:///mirror/archlinux/$repo/os/$arch' >/etc/pacman.d/mirrorlist
+mount -r /dev/sdc /mirror
+```
 
-ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
-
+## Locales
+```bash
 cat >/etc/locale.conf <<EOF
 LANG=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 EOF
 
-echo 'en_US.UTF-8 UTF-8' >/etc/locale.gen
+echo en_US.UTF-8 UTF-8 >/etc/locale.gen
+
 locale-gen
+```
+
+## Install initial system
+```bash
+#pacman -Sy arch-install-scripts #don't need when installing from ISO
+
+mkdir /mnt/arch
+mount /dev/sda1 /mnt/arch
+
+pacstrap /mnt/arch base linux man pacman mc vim netctl wget syslinux bash-completion openssh dhcpcd
+#+arch-firmware for real machines
+
+mkdir /mnt/arch/mirror
+mount --bind -r /mirror /mnt/arch/mirror
+cp /etc/locale.conf /mnt/arch/etc
+cp /etc/locale.gen /mnt/arch/etc
+arch-chroot /mnt/arch
+```
+
+##In chroot environment of the new system: 
+```bash
+locale-gen
+timedatectl set-timezone Europe/Moscow
 
 cat >/etc/fstab <<EOF
 /dev/sda1  /        ext4  rw,relatime  0 1
-/dev/sdb   /mirror  ext4  ro           0 2
+/dev/sdb   swap     swap  defaults     0 0
+/dev/sdc   /mirror  ext4  ro           0 2
 EOF
 
 cat >/boot/syslinux/syslinux.cfg <<EOF
-DEFAULT arch
+DEFAULT myarch
 PROMPT 0
 TIMEOUT 0
 
-LABEL arch
+LABEL myarch
     LINUX ../vmlinuz-linux
-    APPEND root=/dev/sda1 rw vga=773 quiet splash
+    APPEND root=/dev/sda1 rw vga=773
     INITRD ../initramfs-linux.img
 EOF
 
@@ -70,8 +102,8 @@ exit
 
 Again on the master Arch system:
 ```bash
-umount /dev/sdd1
-rm /mnt/creation
+umount /dev/sda1
+rm /mnt/arch
 ```
 
 Reboot to the new Arch and then:
@@ -79,14 +111,13 @@ Reboot to the new Arch and then:
 hostnamectl set-hostname myarch
 hostnamectl status
 
-pacman -Sy dhcpcd
 systemctl enable dhcpcd
 systemctl start dhcpcd
 systemctl status dhcpcd
 
 ping ya.ru
 
-pacman -Sy openssh
+#Add `PermitRootLogin yes` in the "/etc/ssh/sshd_config" to allow root login via SSH.
 systemctl enable sshd
 systemctl start sshd
 systemctl status sshd
