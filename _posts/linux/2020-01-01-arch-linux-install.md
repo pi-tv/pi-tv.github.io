@@ -14,8 +14,8 @@ date: 2021-03-11
 - Swap partition is /dev/sdb
 - There is a local pacman mirror partition at /dev/sdc
 
-## Initial SSH (optional)
-Much more comfortable to copy-paste commands from host machine via SSH.
+## Initial SSH setup (optional)
+It is much more comfortable to copy-paste commands from host machine via SSH.
 Enable SSH access:
 ```bash
 passwd
@@ -63,8 +63,7 @@ locale-gen
 mkdir /mnt/arch
 mount /dev/sda1 /mnt/arch
 
-pacstrap /mnt/arch base linux man pacman mc vim netctl wget syslinux bash-completion openssh dhcpcd
-#+arch-firmware for real machines
+pacstrap /mnt/arch base linux man pacman mc vim netctl wget syslinux bash-completion openssh dhcpcd sudo
 
 mkdir /mnt/arch/mirror
 mount --bind -r /mirror /mnt/arch/mirror
@@ -73,7 +72,7 @@ cp /etc/locale.gen /mnt/arch/etc
 arch-chroot /mnt/arch
 ```
 
-##In chroot environment of the new system: 
+## In a chroot environment of the new system: 
 ```bash
 locale-gen
 timedatectl set-timezone Europe/Moscow
@@ -122,6 +121,16 @@ systemctl enable sshd
 systemctl start sshd
 systemctl status sshd
 ```
+## Add user
+
+```bash
+useradd -m -s /bin/bash user
+password user
+```
+
+Add sudo access to the user via `visudo`, add this line:
+`user ALL=(ALL) ALL`
+
 
 ## Related links
 - [Partitions](/arch-linux-partitions)

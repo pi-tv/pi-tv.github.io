@@ -23,3 +23,13 @@ Make SUBST virtual disk persistent:
 ```shell
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "W:" /t REG_SZ /d "subst T: C:\Temp" /f
 ```
+
+## Remove microsoft store
+```shell
+Get-AppxPackage *windowsstore* | Remove-AppxPackage
+```
+
+Disable medic update service
+```shell
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\WaaSMedicSvc" /v Start /t REG_DWORD /f /d 4
+```
