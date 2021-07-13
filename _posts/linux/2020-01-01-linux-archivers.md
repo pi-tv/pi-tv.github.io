@@ -17,7 +17,7 @@ rar a -r -m5 -k -s -ag-YYYY.MM.DD_HH.MM.SS "$1.rar" "$1"
 
 It creates (`a -r`) 
 - solid (`-s`) 
-- locked(`k`) 
+- locked(`-k`) 
 - maximal compressed (`-m5`)
 - named using the current date (`-ag-YYYY.MM.DD_HH.MM.SS`)
 archive from the specified file or directory.

@@ -121,6 +121,10 @@ systemctl enable sshd
 systemctl start sshd
 systemctl status sshd
 ```
+
+## Install VirtualBox drivers
+Mount VBoxAdditions.iso and then run `./VBoxLinuxAdditions.run`
+
 ## Add user
 
 ```bash

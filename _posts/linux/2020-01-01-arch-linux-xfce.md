@@ -14,9 +14,9 @@ startxfce4
 ```
 
 ## Configure
-Add this into the ".bash_profile" file to autostart Xfce when login on tty1:
+Add this into the ".bash_profile" file to autostart Xfce when login on tty6:
 ```shell
-if [ "$(tty)" = "/dev/tty1" -o "$(tty)" = "/dev/vc/1" ] ; then
+if [ "$(tty)" = "/dev/tty6"] ; then
   startxfce4
 fi
 ```
@@ -29,6 +29,7 @@ fi
 
 This reduced main menu created according to
 [menu specification](https://specifications.freedesktop.org/menu-spec/menu-spec-1.0.html)
+`Application menu -> Use custom menu file`
 
 ```xml
 <!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
@@ -49,13 +50,9 @@ This reduced main menu created according to
         <Filename>xfce4-terminal.desktop</Filename>
         <Separator/>
         <Filename>firefox.desktop</Filename>
-        <Filename>opera.desktop</Filename>
         <Separator/>
         <Filename>mousepad.desktop</Filename>
-        <Filename>gimp.desktop</Filename>
-        <Filename>arduino.desktop</Filename>
         <Filename>pycharm.desktop</Filename>
-        <Filename>idea.desktop</Filename>
         <Separator/>
         <Filename>xfce4-session-logout.desktop</Filename>
     </Layout>
@@ -74,5 +71,24 @@ This reduced main menu created according to
     </Menu>
 
 </Menu>
+```
+
+## Debloat firefox
+Create /usr/lib/firefox/distribution/policies.json
+
+```json
+{
+    "policies": {
+        "CaptivePortal": false,
+        "DisableAppUpdate": true,
+        "DisableFeedbackCommands": true,
+        "DisableFirefoxAccounts": true,
+        "DisableFirefoxStudies": true,
+        "DisableTelemetry": true,
+        "SearchEngines": {
+            "PreventInstalls": true
+        }
+    }
+}
 ```
 
