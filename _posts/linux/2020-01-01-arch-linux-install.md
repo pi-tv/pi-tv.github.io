@@ -136,10 +136,8 @@ Add sudo access to the user via `visudo`, add this line:
 `user ALL=(ALL) ALL`
 
 
-## Related links
-- [Partitions](/arch-linux-partitions)
-- [Pacman](/arch-linux-pacman)
+## Next steps
 - [Cleanup](/arch-linux-cleanup)
-- [Network](/arch-linux-network)
-- [SSH](/arch-linux-ssh)
-- [Xfce](/arch-linux-xfce)
+- [Setup network](/arch-linux-network)
+- [Setup Xfce](/arch-linux-gui-xfce)
+- [Setup Firefox](/arch-linux-gui-firefox)

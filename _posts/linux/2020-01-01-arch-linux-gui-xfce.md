@@ -1,15 +1,15 @@
 ---
-title: Arch Linux Xfce
-tags: [Arch Linux, Linux, Xfce]
+title: Arch Linux setup Xfce
+tags: [Arch Linux, Linux, GUI, Xfce]
 desc: Install Arch Linux Xfce
 date: 2021-03-01
 ---
 
-# Arch Linux Xfce
+# Arch Linux setup Xfce
 
 ## Install
 ```bash
-pacman -Sy xorg-server xfce4 firefox
+pacman -Sy xorg-server xfce4
 startxfce4
 ```
 
@@ -72,23 +72,3 @@ This reduced main menu created according to
 
 </Menu>
 ```
-
-## Debloat firefox
-Create /usr/lib/firefox/distribution/policies.json
-
-```json
-{
-    "policies": {
-        "CaptivePortal": false,
-        "DisableAppUpdate": true,
-        "DisableFeedbackCommands": true,
-        "DisableFirefoxAccounts": true,
-        "DisableFirefoxStudies": true,
-        "DisableTelemetry": true,
-        "SearchEngines": {
-            "PreventInstalls": true
-        }
-    }
-}
-```
-

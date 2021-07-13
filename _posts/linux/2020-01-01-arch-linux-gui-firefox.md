@@ -1,19 +1,17 @@
 ---
-title: Firefox
-tags: [Firefox, MyDeviceMyRules]
-desc: Firefox tune
-date: 2021-03-11
+title: Arch Linux setup Firefox
+tags: [Arch Linux, Linux, GUI, Firefox]
+desc: Firefox tune in Linux
+date: 2021-07-13
 ---
 
-# Firefox
+# Arch Linux setup Firefox
+## Install Firefox
+`pacman -Sy firefox`
+
 ## Turn off unwanted features in Firefox
 
-Some features in Firefox can be disabled by creating the enterprise policy file.
-
-In Windows the file is expected here: "C:\Program Files\Mozilla Firefox\distribution\policies.json".
-For Linux, it is "/usr/lib/firefox/distribution/policies.json".
-
-These options:
+Create /usr/lib/firefox/distribution/policies.json
 ```json
 {
     "policies": {
@@ -41,3 +39,22 @@ do:
 
 Full list of options is available 
 [here](https://github.com/mozilla/policy-templates/blob/master/windows/en-US/firefox.adml).
+
+
+## Use tor
+Install tor `pacman -Sy tor`
+Start tor:
+```bash
+systemctl start tor
+systemctl status tor
+sudo netstat -ltnp | grep tor
+```
+
+### Firefox proxy
+Goto `Settings - > Proxy -> Manual proxy configuration`
+
+- SOCKS Host: 127.0.0.1
+- Proxy DNS when using SOCKS v5
+- Port: 9050
+
+Check it in browser: `https://check.torproject.org/`
