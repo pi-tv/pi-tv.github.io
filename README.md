@@ -1,3 +1,3 @@
 # Pi-TV
 
-See [https://pi-tv.github.io/](Pi-TV) site.
+See [Pi-TV](https://pi-tv.github.io/) site.
