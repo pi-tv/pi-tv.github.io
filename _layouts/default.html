@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--{{site.time | date: '%Y-%m-%d %H:%M'}}-->
+{% if page.ctags==nil or page.ctags == empty %}
+{% assign tags = page.tags %}
+{% else %}
+{% assign tags = page.tags | concat: page.ctags %}
+{% endif %}
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.desc | default: page.title  }}">
+    <meta name="keywords" content="{{ page.tags | join: ', ' }}">
+    <meta name="author" content="Xantorohara">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-TileImage" content="/assets/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+    <link rel="icon" type="image/x-icon" href="https://pi-tv.github.io/assets/favicon/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/webmanifest.json">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-dark.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="/assets/css/default.css?{{site.time | date: '%Y%m%d_%H%M'}}"/>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6112298272240282"
+            crossorigin="anonymous"></script></head>
+<body>
+
+<header>
+    <div style="margin-right: 100px;min-height: 60px;">
+        <a id="home" href="/" style="min-width: 200px;">Pi-TV</a>
+    </div>
+    <hr/>
+    <div id="tags">
+        #
+        {% for tag in tags %}
+        <a href="/tags#{{ tag }}">{{ tag }}</a>{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+        <span style="float:right">{{ page.date | default: site.time | date: "%Y-%m-%d"  }}</span>
+    </div>
+</header>
+
+{{ content }}
+
+<footer>
+    &copy; 2019-2023 <a href="mailto:xantorohara@gmail.com"> Xantorohara </a>
+</footer>
+
+</body>
+</html>

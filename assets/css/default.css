@@ -1,0 +1,118 @@
+html {
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+body {
+    max-width: 60rem;
+    /*font-size: 1rem;*/
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    font-size: large;
+}
+
+h1, h2, h3 {
+    margin: 1.5rem 0;
+}
+
+p {
+    margin: 1rem 0 0.5rem 0;
+    line-height: 1.5;
+}
+
+li {
+    margin: 0.5rem;
+}
+
+pre {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+code {
+    font-size: large;
+    background-color: #EEE;
+}
+
+header {
+    background-image: url("/assets/images/pi-tv-icon-80.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#home {
+    font-family: Consolas, "Lucida Console", monospace;
+    cursor: pointer;
+    font-size: 2rem;
+    text-decoration: none;
+    display: block;
+}
+
+#home:link {
+    color: black;
+}
+
+header hr {
+    height: 5px;
+    background: linear-gradient(90deg,
+    dodgerblue 0px,
+    dodgerblue 95px,
+    red 100px,
+    red 120px,
+    gold 125px,
+    gold 145px,
+    limegreen  150px,
+    limegreen  170px,
+    dodgerblue 175px,
+    dodgerblue 80%,
+    transparent 90%
+    );
+}
+
+ul {
+    list-style-position: inside;
+}
+
+#content {
+}
+
+#tags {
+    margin: 10px;
+    font-size: 14px;
+    font-family: Consolas, "Lucida Console", monospace;
+}
+
+article table {
+    border-collapse: collapse;
+}
+
+article th, td {
+    padding: 5px 10px;
+    border: solid lightgray  1px;
+}
+
+article th{
+    border-bottom: solid lightgray 2px;
+}

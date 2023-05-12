@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article id="content">
+    {{ content }}
+</article>
+
+<h2>Notes <small>({{ site.notes.size }})</small></h2>
+
+<ul>
+    {% assign notes = site.notes | sort_natural: 'title'  %}
+    {%- for note in notes -%}
+    <li><a href="{{ note.url }}">{{ note.title }}</a></li>
+    {%- endfor -%}
+</ul>
+
+<h2>Tags</h2>
+<ul>
+    <li><a href="/tags">All</a></li>
+</ul>

@@ -1,0 +1,22 @@
+url: https://pi-tv.github.io
+
+collections:
+  notes:
+    output: true
+
+defaults:
+  - scope:
+      type: notes
+    values:
+      layout: note
+      sort_by: title
+      permalink: /:name
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable : true
+
+plugins:
+  - jekyll-sitemap
+  

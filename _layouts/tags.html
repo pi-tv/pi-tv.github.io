@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+<style>
+    .index-tags {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .index-tag {
+        box-sizing: border-box;
+        flex: 1 0 auto;
+        padding: 0 10px;
+    }
+
+    hr {
+        height: 1px;
+        background: dodgerblue;
+    }
+
+    @media screen and (max-width: 1000px){
+        .index-tag {
+            width: 45%;
+        }
+    }
+
+    @media screen and (max-width: 500px){
+        .index-tags {
+            display: block;
+        }
+
+        .index-tag {
+            flex: none;
+            width: auto;
+        }
+    }
+</style>
+
+<main id="content">
+    <div class="index-tags">
+        {% assign tags = site.notes | map: 'tags' | uniq | sort_natural %}
+        {%- for tag in tags -%}
+        <div class="index-tag">
+            <h3 id="{{ tag }}">{{ tag }}</h3>
+            <ul>
+                {%- for note in site.notes -%}
+                {%- if note.tags contains tag -%}
+                <li><a href="{{ note.url }}">{{ note.title }}</a></li>
+                {%- endif -%}
+                {%- endfor -%}
+            </ul>
+        </div>
+        {%- endfor -%}
+    </div>
+    <hr/>
+    <div class="index-tags">
+        {% assign tags = site.notes | map: 'ctags' | uniq | sort_natural %}
+        {%- for tag in tags -%}
+        <div class="index-tag">
+            <h3 id="{{ tag }}">{{ tag }}</h3>
+            <ul>
+                {%- for note in site.notes -%}
+                {%- if note.ctags contains tag -%}
+                <li><a href="{{ note.url }}">{{ note.title }}</a></li>
+                {%- endif -%}
+                {%- endfor -%}
+            </ul>
+        </div>
+        {%- endfor -%}
+    </div>
+</main>
