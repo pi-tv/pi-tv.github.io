@@ -1,7 +1,7 @@
 ---
 title: Archivers
 tags: [Archiver]
-ctags: [7za, rar, tar]
+commands: [7za, rar, tar]
 date: 2021-03-11
 ---
 

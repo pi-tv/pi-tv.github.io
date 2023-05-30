@@ -1,7 +1,7 @@
 ---
 title: Man
 tags: [Man, TODO]
-ctags: [man]
+commands: [man]
 date: 2021-12-12
 ---
 

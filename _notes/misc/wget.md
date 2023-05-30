@@ -1,7 +1,7 @@
 ---
 title: Wget
 tags: [HTTP]
-ctags: [wget]
+commands: [wget]
 date: 2021-03-11
 ---
 

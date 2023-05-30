@@ -1,7 +1,7 @@
 ---
 title: FFmpeg
 tags: [Audio, FFmpeg, Video]
-ctags: [ffmpeg]
+commands: [ffmpeg]
 date: 2021-07-16
 ---
 

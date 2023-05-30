@@ -1,7 +1,7 @@
 ---
 title: Arch Linux docs 
 tags: [Arch Linux, Docs, Nginx]
-ctags: [find, pacman]
+commands: [find, pacman]
 desc: Arch Linux offline docs.
 date: 2022-01-29
 ---

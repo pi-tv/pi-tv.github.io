@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--{{site.time | date: '%Y-%m-%d %H:%M'}}-->
-{% if page.ctags==nil or page.ctags == empty %}
+{% if page.commands==nil or page.commands == empty %}
 {% assign tags = page.tags %}
 {% else %}
-{% assign tags = page.tags | concat: page.ctags %}
+{% assign tags = page.tags | concat: page.commands %}
 {% endif %}
 <html lang="{{ page.lang | default: 'en' }}">
 <head>
@@ -38,8 +38,8 @@
     <script>hljs.initHighlightingOnLoad();</script>
 
     <link rel="stylesheet" href="/assets/css/default.css?{{site.time | date: '%Y%m%d_%H%M'}}"/>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6112298272240282"
-            crossorigin="anonymous"></script></head>
+<!--    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6112298272240282"-->
+<!--            crossorigin="anonymous"></script></head>-->
 <body>
 
 <header>

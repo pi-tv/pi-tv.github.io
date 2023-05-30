@@ -1,7 +1,7 @@
 ---
 title: Linux memory
 tags: [Linux, Memory]
-ctags: [free, lshw, lsmem, vmstat]
+commands: [free, lshw, lsmem, vmstat]
 desc: Memory usage diagnostic in Linux.
 date: 2022-02-04
 ---

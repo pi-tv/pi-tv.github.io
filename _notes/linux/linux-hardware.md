@@ -1,7 +1,7 @@
 ---
 title: Linux hardware
 tags: [Hardware, Linux]
-ctags: [lscpu, lshw, lspci]
+commands: [lscpu, lshw, lspci]
 desc: Hardware information in Linux.
 date: 2022-02-04
 ---

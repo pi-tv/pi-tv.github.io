@@ -1,7 +1,7 @@
 ---
 title: Arch Linux mirror
 tags: [Arch Linux, Nginx, Pacman]
-ctags: [mount, rsync]
+commands: [mount, rsync]
 desc: Make a local Arch mirror.
 date: 2022-01-29
 ---
@@ -10,7 +10,7 @@ date: 2022-01-29
 
 ## Make a mirror
 
-Arch repository contains almost all software I need. It's size is about 50GB+ of packages.
+Arch repository contains almost all software I need. Its size is about 50GB+ of packages.
 
 Script to make a local mirror:
 

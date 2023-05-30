@@ -1,7 +1,7 @@
 ---
 title: Arch Linux docker 
 tags: [Arch Linux, Docker]
-ctags: [docker, pacman, wget]
+commands: [docker, pacman, wget]
 desc: Create docker images from scratch. 
 date: 2022-01-08
 ---

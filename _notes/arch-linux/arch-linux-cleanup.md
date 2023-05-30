@@ -1,7 +1,7 @@
 ---
 title: Arch Linux cleanup
 tags: [Arch Linux, Cleanup]
-ctags: [df, du, find, pacman]
+commands: [df, du, find, pacman]
 desc: Remove unnecessary files from Arch Linux.
 date: 2022-02-02
 ---
@@ -10,10 +10,14 @@ date: 2022-02-02
 
 Disk space matters.
 
-Linux includes a lot of redundant files. As a German - do you need man files or locales in Japanese?
-In most cases - No.
+Linux includes a lot of redundant files. For example,
+as a German - do you need man files, locales or documents in Japanese?
+In most cases the answer is No.
 
 ## Analyze disk usage
+
+Before cleanup, you need to know what and how much it occupies the space.
+These commands can help:
 
 - `df -h /` - disk size, used and free space for root
 - `du -shx /` - total files size on the root (`-x` or `--one-file-system`)

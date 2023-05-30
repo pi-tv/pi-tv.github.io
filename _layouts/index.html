@@ -6,7 +6,7 @@ layout: default
     {{ content }}
 </article>
 
-<h2>Notes <small>({{ site.notes.size }})</small></h2>
+<h2>Articles <small>({{ site.notes.size }})</small></h2>
 
 <ul>
     {% assign notes = site.notes | sort_natural: 'title'  %}
@@ -17,5 +17,10 @@ layout: default
 
 <h2>Tags</h2>
 <ul>
-    <li><a href="/tags">All</a></li>
+    <li><a href="/tags">All (site.notes | map: 'tags' | uniq | size)</a></li>
+</ul>
+
+<h2>Commands</h2>
+<ul>
+    <li><a href="/commands">All (site.notes | map: 'commands' | uniq | size)</a></li>
 </ul>

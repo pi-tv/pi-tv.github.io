@@ -1,7 +1,7 @@
 ---
 title: Arch Linux install
 tags: [Arch Linux, Install, Syslinux, VirtualBox]
-ctags: [fdisk, mount, pacman, pacstrap, systemctl]
+commands: [fdisk, arch-chroot, mount, pacman, pacstrap, systemctl]
 desc: Install Arch Linux.
 date: 2021-03-11
 ---
@@ -11,10 +11,11 @@ date: 2021-03-11
 ## Pre-conditions:
 
 - Installation into the VirtualBox
+    - Host-Only network adapter is enabled
 - Install from the Arch ISO
 - Target partition is "/dev/sda1"
 - Swap partition is "/dev/sdb"
-- There is a local pacman mirror partition at "/dev/sdc" (see [Arch Linux mirror](/arch-linux-mirror))
+- Optional: there is a local pacman mirror partition at "/dev/sdc" (see [Arch Linux mirror](/arch-linux-mirror))
 
 ## Initial SSH setup (optional)
 
@@ -28,18 +29,20 @@ systemctl start sshd
 ## Prepare disks
 
 ```bash
+lsblk
 fdisk /dev/sda
 > n
 > p
 > 1
->
+> enter
+> enter
 > w
 
 mkfs.ext4 /dev/sda1 -L root
 mkswap /dev/sdb -L swap
 ```
 
-## Mount mirror
+## Optional: mount a local mirror
 
 ```bash
 mkdir /mirror
@@ -70,7 +73,7 @@ locale-gen
 mkdir /mnt/arch
 mount /dev/sda1 /mnt/arch
 
-pacstrap /mnt/arch base linux man pacman mc vim netctl wget syslinux bash-completion openssh dhcpcd sudo
+pacstrap -K /mnt/arch base linux man pacman mc vim netctl wget syslinux bash-completion openssh dhcpcd sudo htop
 
 mkdir /mnt/arch/mirror
 mount --bind -r /mirror /mnt/arch/mirror
@@ -83,12 +86,13 @@ arch-chroot /mnt/arch
 
 ```bash
 locale-gen
-timedatectl set-timezone Europe/Moscow
+ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+hwclock --systohc
 
 cat >/etc/fstab <<EOF
 /dev/sda1  /        ext4  rw,relatime  0 1
 /dev/sdb   swap     swap  defaults     0 0
-/dev/sdc   /mirror  ext4  ro           0 2
+#/dev/sdc   /mirror  ext4  ro           0 2
 EOF
 
 cat >/boot/syslinux/syslinux.cfg <<EOF
@@ -132,23 +136,19 @@ systemctl start sshd
 systemctl status sshd
 ```
 
-## Install VirtualBox drivers
-
-Mount VBoxAdditions.iso and then run `./VBoxLinuxAdditions.run`
-
 ## Add user
 
 ```bash
 useradd -m -s /bin/bash user
-password user
+passwd user
 ```
 
-Add sudo access to the user via `visudo`, add this line:
+Add sudo access to the user via `sudo EDITOR=vim visudo`, add this line:
 `user ALL=(ALL) ALL`
 
 ## Next steps
 
-- [Cleanup](/linux-cleanup)
+- [Arch Linux cleanup](/arch-linux-cleanup)
 - [Setup network](/linux-network)
 - [Setup Xfce](/xfce)
 - [Setup Firefox](/firefox)

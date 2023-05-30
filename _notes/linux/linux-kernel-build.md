@@ -1,7 +1,7 @@
 ---
 title: Linux kernel build 
 tags: [Kernel, Linux, Syslinux]
-ctags: [make]
+commands: [make]
 date: 2021-12-27
 ---
 

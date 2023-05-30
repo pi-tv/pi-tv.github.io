@@ -1,7 +1,7 @@
 ---
 title: Pacman
 tags: [Linux, Pacman]
-ctags: [pacman]
+commands: [pacman]
 desc: Pacman commands
 date: 2021-03-11
 ---

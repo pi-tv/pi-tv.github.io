@@ -1,7 +1,7 @@
 ---
 title: Linux выживальщика
 tags: [Arch Linux, Linux, Mirror, Pacman, RUS]
-ctags: [pacman, rsync, nginx]
+commands: [pacman, rsync, nginx]
 desc: Hardware information in Linux.
 lang: ru
 date: 2022-02-26
