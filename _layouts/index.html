@@ -17,10 +17,10 @@ layout: default
 
 <h2>Tags</h2>
 <ul>
-    <li><a href="/tags">All (site.notes | map: 'tags' | uniq | size)</a></li>
+    <li><a href="/tags">All ({{ site.notes | map: 'tags' | uniq | size }})</a></li>
 </ul>
 
 <h2>Commands</h2>
 <ul>
-    <li><a href="/commands">All (site.notes | map: 'commands' | uniq | size)</a></li>
+    <li><a href="/commands">All ({{site.notes | map: 'commands' | uniq | size }})</a></li>
 </ul>
